@@ -1,0 +1,326 @@
+{
+  "kind": "build_request",
+  "title": "Dev Properties & Construction marketing website (Lucknow)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive, modern, professional marketing website for “Dev Properties & Construction” with a trustworthy, premium, simple look using a clean blue/white theme, modern typography, and real-estate/construction visuals (homes, apartments, construction).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a modern, professional real estate + construction website for a company named “Dev Properties & Construction”... The website should feel trustworthy, premium, and simple. Use a clean blue/white theme, modern fonts, and real estate visuals (homes, apartments, construction)."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Site uses a consistent blue/white palette and modern font styling across all sections",
+        "All pages/sections are mobile-first and scale cleanly to desktop",
+        "Visuals used throughout the site clearly relate to real estate and construction"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement site navigation that provides access to these sections/pages: Home, About Us, Services, Properties (Buy/Sell/Rent), Construction, Why Choose Us, Testimonials, Contact Us.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include sections: Home, About Us, Services, Properties (Buy/Sell/Rent), Construction, Why Choose Us, Testimonials, Contact Us."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation includes links for all requested sections",
+        "Clicking a navigation item takes the user to the corresponding section (via dedicated routes or in-page anchors)",
+        "Navigation works on mobile (e.g., collapsible menu) and desktop"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add clear, prominent CTAs throughout the site, including buttons labeled exactly: “Get Free Consultation”, “List Your Property”, and “Book Site Visit”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Add strong CTAs like “Get Free Consultation”, “List Your Property”, and “Book Site Visit”."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three CTA labels appear on the site as clickable buttons/links",
+        "At least one CTA is visible above the fold on the Home section",
+        "CTAs are visually emphasized (primary/secondary button styling consistent with the theme)"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create the Home section with a hero area that introduces the company (Lucknow, Uttar Pradesh, India; 15 years experience; services summary) and includes at least one primary CTA.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "The business has 15 years of experience and specializes in buying, selling, reselling properties, property management, and construction services."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home hero clearly states company name and location (Lucknow, Uttar Pradesh, India)",
+        "Home includes a visible mention of “15 years of experience”",
+        "Home includes a brief list/summary of core offerings (buy/sell/resell, property management, construction)"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create the About Us section describing Dev Properties & Construction, emphasizing 15 years of experience, trust, and local expertise in Lucknow.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "The business has 15 years of experience... The website should feel trustworthy, premium, and simple."
+        ]
+      },
+      "acceptanceCriteria": [
+        "About Us content is written in English and references 15 years of experience",
+        "Tone is professional and trust-building (no placeholder lorem ipsum)"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create the Services section that clearly lists and describes: buying properties, selling properties, reselling properties, property management, and construction services.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "specializes in buying, selling, reselling properties, property management, and construction services"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All five services are explicitly listed",
+        "Each service has a short English description that is not placeholder text",
+        "Services layout is responsive and visually consistent (cards or similar)"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create the Properties section with distinct options for Buy, Sell, and Rent; include a clean UI to switch between these categories (tabs/segmented control) and show representative property cards/content for each category (static content is acceptable).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Properties (Buy/Sell/Rent)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Properties section has clear Buy/Sell/Rent category switching",
+        "Each category shows at least 3 representative cards/items",
+        "Property cards have consistent structure (e.g., title, location, price label, quick CTA)"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create the Construction section describing construction offerings and process (e.g., planning, design, execution, quality, timelines), aligned to a premium, trustworthy tone.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include sections: ... Construction ...",
+          "real estate + construction website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Construction section includes a clear summary of construction services",
+        "Construction section includes at least 3 process/highlight points (e.g., quality, timeline, transparency)"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Create the Why Choose Us section with clear value propositions relevant to the business (e.g., 15 years experience, local market expertise, transparent dealing, end-to-end support, quality construction).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include sections: ... Why Choose Us ...",
+          "The business has 15 years of experience"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Why Choose Us section contains at least 5 distinct bullet/value items",
+        "At least one item references 15 years of experience"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Create the Testimonials section with a premium layout and at least 3 testimonials (English) presented as example client feedback (clearly not attributed to real individuals unless generic names are used).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include sections: ... Testimonials ..."
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least 3 testimonial cards are shown",
+        "Testimonials are readable, professional, and consistent with a premium theme"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Create the Contact Us section that displays the phone number, email, and physical address exactly as provided, and includes a contact form for inquiries (name, phone, email, message).",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Add ... phone number +91 85659 64384, email devproperties44@gmail.com, and address A 158 near Kalandi Park, Sector 16, Vrindavan Colony, Lucknow 226029."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact section displays phone: +91 85659 64384",
+        "Contact section displays email: devproperties44@gmail.com",
+        "Contact section displays address: A 158 near Kalandi Park, Sector 16, Vrindavan Colony, Lucknow 226029",
+        "Contact form validates required fields and shows a success state on submit"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add a floating WhatsApp button that opens a WhatsApp chat to the provided phone number, and ensure the phone number and email are clickable (tel: and mailto: links).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Add a WhatsApp button, phone number +91 85659 64384, email devproperties44@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "WhatsApp floating button is visible on all pages/sections and opens WhatsApp chat for +91 85659 64384",
+        "Phone number link uses tel: and works on mobile",
+        "Email link uses mailto: and opens the user’s email client"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Backend: implement minimal persistence for contact form submissions in the single Motoko actor (store timestamped inquiries) and expose methods to create an inquiry and list inquiries (for future admin use).",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Contact Us... Add ... email ... phone ...",
+          "Add strong CTAs ... Get Free Consultation ..."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A backend method exists to submit an inquiry with name/phone/email/message and timestamp",
+        "A backend method exists to list inquiries (most recent first or with a clear order)",
+        "Frontend contact form submission calls the backend and displays success/error feedback without page reload"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Add a consistent site footer containing company name, quick links to the main sections, and the provided contact details (phone/email/address).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include sections... Contact Us. Add ... phone ... email ... address ..."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer appears on all pages/sections",
+        "Footer includes phone, email, and address exactly as provided",
+        "Footer includes navigation links to main sections"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Ensure all user-facing copy is in English and avoids placeholder text; include the company name “Dev Properties & Construction” prominently in the header/branding.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create ... website for a company named “Dev Properties & Construction”",
+          "Use English for any user-facing text in the build request."
+        ]
+      },
+      "acceptanceCriteria": [
+        "No lorem ipsum/placeholder content is visible",
+        "Company name appears in header/branding area on the site"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Add and render generated static visual assets (from frontend/public/assets/generated) that match the real estate + construction theme (hero/banner and a small set of section visuals/icons).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Use ... real estate visuals (homes, apartments, construction)."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are used in the UI (e.g., hero, section imagery, or icons)",
+        "Images load correctly in production build without being served from the backend"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use the pre-injected React + TypeScript + Tailwind + shadcn/ui + React Query template.",
+    "Do not edit files under frontend/src/components/ui (compose them instead).",
+    "Do not edit immutable hook/entry files: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx.",
+    "Backend must remain a single Motoko actor with all logic in backend/main.mo; only add backend/migration.mo if an upgrade-safe state migration is required.",
+    "No third-party auth providers; only Internet Identity is supported (not required for this marketing site)."
+  ],
+  "nonGoals": [
+    "User authentication/admin dashboard for managing properties",
+    "A full CMS for adding/editing property listings",
+    "Payments, booking/payment processing, or third-party CRM/email integrations",
+    "Map/GPS/geolocation features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Premium real estate hero banner with modern homes/apartments and subtle construction elements, blue/white palette (hero-real-estate-construction.dim_1600x800.png)",
+      "Minimal set of 5 monochrome line icons in a consistent style for: buy, sell, rent, property management, construction (services-icons-sprite.dim_800x200.png)",
+      "Clean abstract city/skyline or architectural pattern background, very subtle, blue/white (section-bg-architecture.dim_1600x900.png)",
+      "Professional testimonial section background texture/pattern, subtle, blue/white (testimonials-bg.dim_1600x600.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

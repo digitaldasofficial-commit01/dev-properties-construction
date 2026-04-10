@@ -1,0 +1,312 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-modern-professional-marketing-website-for-dev-properties-construction-with-a-trustworthy-premium-simple-look-using-a-clean-blue-white-theme-modern-typography-and-real-estate-construction-visuals-homes-apartments-construction",
+      "featureTitle": "Create a responsive, modern, professional marketing website for “Dev Properties & Construction” with a trustworthy, premium, simple look using a clean blue/white theme, modern typography, and real-estate/construction visuals (homes, apartments, construction).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-site-navigation-that-provides-access-to-these-sections-pages-home-about-us-services-properties-buy-sell-rent-construction-why-choose-us-testimonials-contact-us",
+      "featureTitle": "Implement site navigation that provides access to these sections/pages: Home, About Us, Services, Properties (Buy/Sell/Rent), Construction, Why Choose Us, Testimonials, Contact Us.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteHeader.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-clear-prominent-ctas-throughout-the-site-including-buttons-labeled-exactly-get-free-consultation-list-your-property-and-book-site-visit",
+      "featureTitle": "Add clear, prominent CTAs throughout the site, including buttons labeled exactly: “Get Free Consultation”, “List Your Property”, and “Book Site Visit”.",
+      "files": [
+        "frontend/src/sections/ContactSection.tsx",
+        "frontend/src/sections/HeroSection.tsx",
+        "frontend/src/sections/ServicesSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-home-section-with-a-hero-area-that-introduces-the-company-lucknow-uttar-pradesh-india-15-years-experience-services-summary-and-includes-at-least-one-primary-cta",
+      "featureTitle": "Create the Home section with a hero area that introduces the company (Lucknow, Uttar Pradesh, India; 15 years experience; services summary) and includes at least one primary CTA.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-about-us-section-describing-dev-properties-construction-emphasizing-15-years-of-experience-trust-and-local-expertise-in-lucknow",
+      "featureTitle": "Create the About Us section describing Dev Properties & Construction, emphasizing 15 years of experience, trust, and local expertise in Lucknow.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/AboutSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-services-section-that-clearly-lists-and-describes-buying-properties-selling-properties-reselling-properties-property-management-and-construction-services",
+      "featureTitle": "Create the Services section that clearly lists and describes: buying properties, selling properties, reselling properties, property management, and construction services.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/ServicesSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-properties-section-with-distinct-options-for-buy-sell-and-rent-include-a-clean-ui-to-switch-between-these-categories-tabs-segmented-control-and-show-representative-property-cards-content-for-each-category-static-content-is-acceptable",
+      "featureTitle": "Create the Properties section with distinct options for Buy, Sell, and Rent; include a clean UI to switch between these categories (tabs/segmented control) and show representative property cards/content for each category (static content is acceptable).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/PropertiesSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-construction-section-describing-construction-offerings-and-process-e-g-planning-design-execution-quality-timelines-aligned-to-a-premium-trustworthy-tone",
+      "featureTitle": "Create the Construction section describing construction offerings and process (e.g., planning, design, execution, quality, timelines), aligned to a premium, trustworthy tone.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/ConstructionSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-why-choose-us-section-with-clear-value-propositions-relevant-to-the-business-e-g-15-years-experience-local-market-expertise-transparent-dealing-end-to-end-support-quality-construction",
+      "featureTitle": "Create the Why Choose Us section with clear value propositions relevant to the business (e.g., 15 years experience, local market expertise, transparent dealing, end-to-end support, quality construction).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/WhyChooseUsSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-testimonials-section-with-a-premium-layout-and-at-least-3-testimonials-english-presented-as-example-client-feedback-clearly-not-attributed-to-real-individuals-unless-generic-names-are-used",
+      "featureTitle": "Create the Testimonials section with a premium layout and at least 3 testimonials (English) presented as example client feedback (clearly not attributed to real individuals unless generic names are used).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/TestimonialsSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-contact-us-section-that-displays-the-phone-number-email-and-physical-address-exactly-as-provided-and-includes-a-contact-form-for-inquiries-name-phone-email-message",
+      "featureTitle": "Create the Contact Us section that displays the phone number, email, and physical address exactly as provided, and includes a contact form for inquiries (name, phone, email, message).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ContactForm.tsx",
+        "frontend/src/sections/ContactSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-floating-whatsapp-button-that-opens-a-whatsapp-chat-to-the-provided-phone-number-and-ensure-the-phone-number-and-email-are-clickable-tel-and-mailto-links",
+      "featureTitle": "Add a floating WhatsApp button that opens a WhatsApp chat to the provided phone number, and ensure the phone number and email are clickable (tel: and mailto: links).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteFooter.tsx",
+        "frontend/src/components/WhatsAppFloatingButton.tsx",
+        "frontend/src/sections/ContactSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-consistent-site-footer-containing-company-name-quick-links-to-the-main-sections-and-the-provided-contact-details-phone-email-address",
+      "featureTitle": "Add a consistent site footer containing company name, quick links to the main sections, and the provided contact details (phone/email/address).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteFooter.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-all-user-facing-copy-is-in-english-and-avoids-placeholder-text-include-the-company-name-dev-properties-construction-prominently-in-the-header-branding",
+      "featureTitle": "Ensure all user-facing copy is in English and avoids placeholder text; include the company name “Dev Properties & Construction” prominently in the header/branding.",
+      "files": [
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/sections/AboutSection.tsx",
+        "frontend/src/sections/ServicesSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-and-render-generated-static-visual-assets-from-frontend-public-assets-generated-that-match-the-real-estate-construction-theme-hero-banner-and-a-small-set-of-section-visuals-icons",
+      "featureTitle": "Add and render generated static visual assets (from frontend/public/assets/generated) that match the real estate + construction theme (hero/banner and a small set of section visuals/icons).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/sections/HeroSection.tsx",
+        "frontend/src/sections/ServicesSection.tsx",
+        "frontend/src/sections/TestimonialsSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

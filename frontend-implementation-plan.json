@@ -1,0 +1,352 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Dev Properties & Construction (Lucknow) marketing website — frontend",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Apply a responsive premium blue/white visual theme with modern typography and real-estate/construction visuals across the site.",
+      "acceptanceCriteria": [
+        "Site uses a consistent blue/white palette and modern font styling across all sections",
+        "All pages/sections are mobile-first and scale cleanly to desktop",
+        "Visuals used throughout the site clearly relate to real estate and construction"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Create global Tailwind layers and set CSS variables for a clean blue/white theme (primary/foreground/background), base typography, and consistent section spacing for a modern premium look."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page marketing layout (header + sections + footer) with responsive containers and composition-first styling to achieve the modern, trustworthy look."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement responsive navigation for Home, About Us, Services, Properties, Construction, Why Choose Us, Testimonials, and Contact Us.",
+      "acceptanceCriteria": [
+        "Navigation includes links for all requested sections",
+        "Clicking a navigation item takes the user to the corresponding section (via dedicated routes or in-page anchors)",
+        "Navigation works on mobile (e.g., collapsible menu) and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "create",
+          "description": "Create a responsive header with desktop nav links and a mobile collapsible menu (use shadcn/ui primitives such as Sheet/Button to support the menu). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire SiteHeader into the app and connect nav items to section anchors/ids for Home/About/Services/Properties/Construction/Why/Testimonials/Contact."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add prominent CTAs labeled exactly “Get Free Consultation”, “List Your Property”, and “Book Site Visit” with themed primary/secondary styling.",
+      "acceptanceCriteria": [
+        "All three CTA labels appear on the site as clickable buttons/links",
+        "At least one CTA is visible above the fold on the Home section",
+        "CTAs are visually emphasized (primary/secondary button styling consistent with the theme)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/HeroSection.tsx",
+          "operation": "create",
+          "description": "Implement above-the-fold hero CTAs, ensuring at least one primary CTA is visible immediately (use shadcn/ui Button for consistent styling). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/sections/ServicesSection.tsx",
+          "operation": "create",
+          "description": "Add secondary CTAs within services content (including “List Your Property” and/or “Book Site Visit”) to reinforce conversion points (use shadcn/ui Button). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/sections/ContactSection.tsx",
+          "operation": "create",
+          "description": "Add a CTA area near the inquiry form to include remaining required CTA labels as clickable actions that scroll/focus users into the form (use shadcn/ui Button). Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create the Home hero section introducing the company (Lucknow; 15 years experience; services summary) with a primary CTA.",
+      "acceptanceCriteria": [
+        "Home hero clearly states company name and location (Lucknow, Uttar Pradesh, India)",
+        "Home includes a visible mention of “15 years of experience”",
+        "Home includes a brief list/summary of core offerings (buy/sell/resell, property management, construction)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Add hero copy explicitly stating “Dev Properties & Construction”, “Lucknow, Uttar Pradesh, India”, “15 years of experience”, and a short offerings summary; include at least one primary CTA button."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render HeroSection as the Home section with a stable anchor id for navigation (e.g., #home)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create an About Us section describing the company with a trust-building tone and local expertise in Lucknow.",
+      "acceptanceCriteria": [
+        "About Us content is written in English and references 15 years of experience",
+        "Tone is professional and trust-building (no placeholder lorem ipsum)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/AboutSection.tsx",
+          "operation": "create",
+          "description": "Write English About Us content emphasizing trust, local expertise in Lucknow, and 15 years of experience; include a premium, simple layout."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire AboutSection into the page with a navigation anchor id (e.g., #about)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create a Services section listing and describing buying, selling, reselling, property management, and construction services.",
+      "acceptanceCriteria": [
+        "All five services are explicitly listed",
+        "Each service has a short English description that is not placeholder text",
+        "Services layout is responsive and visually consistent (cards or similar)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Implement a responsive card/grid layout listing all five services with concise English descriptions (use shadcn/ui Card for consistent premium styling). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ServicesSection into the page with a navigation anchor id (e.g., #services)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create a Properties section with Buy/Sell/Rent category switching and representative property cards per category.",
+      "acceptanceCriteria": [
+        "Properties section has clear Buy/Sell/Rent category switching",
+        "Each category shows at least 3 representative cards/items",
+        "Property cards have consistent structure (e.g., title, location, price label, quick CTA)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/PropertiesSection.tsx",
+          "operation": "create",
+          "description": "Implement a Properties section with a tab/segmented switch between Buy/Sell/Rent (use shadcn/ui Tabs), each showing at least 3 static property cards with consistent fields and a quick CTA. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire PropertiesSection into the page with a navigation anchor id (e.g., #properties)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Create a Construction section describing construction offerings and a premium process overview (planning/design/execution/quality/timelines).",
+      "acceptanceCriteria": [
+        "Construction section includes a clear summary of construction services",
+        "Construction section includes at least 3 process/highlight points (e.g., quality, timeline, transparency)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/ConstructionSection.tsx",
+          "operation": "create",
+          "description": "Create construction offerings copy and a process/highlights list (minimum 3 points) aligned to a premium, trustworthy tone."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ConstructionSection into the page with a navigation anchor id (e.g., #construction)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Create a Why Choose Us section with at least 5 value propositions tailored to the business.",
+      "acceptanceCriteria": [
+        "Why Choose Us section contains at least 5 distinct bullet/value items",
+        "At least one item references 15 years of experience"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/WhyChooseUsSection.tsx",
+          "operation": "create",
+          "description": "Create a value-proposition section with at least 5 distinct items including 15 years experience, local expertise, transparent dealing, end-to-end support, and quality construction."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire WhyChooseUsSection into the page with a navigation anchor id (e.g., #why-choose-us)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Create a premium Testimonials section showing at least 3 example testimonials in English.",
+      "acceptanceCriteria": [
+        "At least 3 testimonial cards are shown",
+        "Testimonials are readable, professional, and consistent with a premium theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/TestimonialsSection.tsx",
+          "operation": "create",
+          "description": "Create a testimonials section with at least 3 premium-styled testimonial cards using generic names/initials (use shadcn/ui Card for consistent layout). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire TestimonialsSection into the page with a navigation anchor id (e.g., #testimonials)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Create the Contact Us section with exact contact details and an inquiry form (name, phone, email, message) that validates required fields and shows success on submit.",
+      "acceptanceCriteria": [
+        "Contact section displays phone: +91 85659 64384",
+        "Contact section displays email: devproperties44@gmail.com",
+        "Contact section displays address: A 158 near Kalandi Park, Sector 16, Vrindavan Colony, Lucknow 226029",
+        "Contact form validates required fields and shows a success state on submit"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Render the phone/email/address exactly as provided and compose in the ContactForm component; ensure required fields are validated and a clear success state is shown after submission."
+        },
+        {
+          "path": "frontend/src/components/ContactForm.tsx",
+          "operation": "create",
+          "description": "Implement the inquiry form UI with client-side required-field validation and submit handling using React Query to call the backend capability submitContactForm; show success/error feedback without page reload (use shadcn/ui Input/Textarea/Button and an Alert for feedback). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ContactSection into the page with a navigation anchor id (e.g., #contact) and ensure the section is reachable from primary CTAs."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Add a floating WhatsApp button and make phone/email clickable via tel: and mailto: links.",
+      "acceptanceCriteria": [
+        "WhatsApp floating button is visible on all pages/sections and opens WhatsApp chat for +91 85659 64384",
+        "Phone number link uses tel: and works on mobile",
+        "Email link uses mailto: and opens the user’s email client"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/WhatsAppFloatingButton.tsx",
+          "operation": "create",
+          "description": "Create a fixed-position WhatsApp action button that opens a WhatsApp chat to +91 85659 64384 using the appropriate wa.me link formatting and accessible labeling."
+        },
+        {
+          "path": "frontend/src/sections/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Ensure displayed phone and email are rendered as clickable tel: and mailto: links (and keep the visible text exactly as provided)."
+        },
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "create",
+          "description": "Ensure footer contact details also use tel: and mailto: links for phone/email while displaying the exact provided text."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render WhatsAppFloatingButton at the app root so it appears across all sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Add a consistent footer with company name, quick links, and provided contact details.",
+      "acceptanceCriteria": [
+        "Footer appears on all pages/sections",
+        "Footer includes phone, email, and address exactly as provided",
+        "Footer includes navigation links to main sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Implement footer content with company name, quick links to all main sections, and the exact provided phone/email/address in a premium blue/white style."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire SiteFooter into the app layout so it renders consistently across the entire single-page site."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Ensure all copy is English with no placeholder text and show “Dev Properties & Construction” prominently in header branding.",
+      "acceptanceCriteria": [
+        "No lorem ipsum/placeholder content is visible",
+        "Company name appears in header/branding area on the site"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Add prominent header branding text “Dev Properties & Construction” and ensure navigation labels are in English and consistent."
+        },
+        {
+          "path": "frontend/src/sections/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Review and adjust section copy to ensure all user-facing text is English and non-placeholder, maintaining a professional tone."
+        },
+        {
+          "path": "frontend/src/sections/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Ensure all service descriptions are English and non-placeholder across all cards."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Render the generated static visual assets from frontend/public/assets/generated in the UI (hero, icons, and section backgrounds).",
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are used in the UI (e.g., hero, section imagery, or icons)",
+        "Images load correctly in production build without being served from the backend"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Use the generated hero image as the hero visual/background: frontend/public/assets/generated/hero-real-estate-construction.dim_1600x800.png."
+        },
+        {
+          "path": "frontend/src/sections/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Use the generated icons sprite for the five service items: frontend/public/assets/generated/services-icons-sprite.dim_800x200.png (e.g., as a sprite-based or split icon presentation)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply the generated subtle architectural background to appropriate sections via layout wrappers: frontend/public/assets/generated/section-bg-architecture.dim_1600x900.png."
+        },
+        {
+          "path": "frontend/src/sections/TestimonialsSection.tsx",
+          "operation": "modify",
+          "description": "Use the generated testimonials background texture/pattern in the testimonials section: frontend/public/assets/generated/testimonials-bg.dim_1600x600.png."
+        }
+      ]
+    }
+  ]
+}

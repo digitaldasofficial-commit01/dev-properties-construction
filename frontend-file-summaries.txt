@@ -1,0 +1,18 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH-based blue/white premium color system, custom fonts (Inter + Playfair Display), and utility classes for consistent section spacing.",
+  "frontend/src/App.tsx": "Main application component that composes all sections (Hero, About, Services, Properties, Construction, Why Choose Us, Testimonials, Contact) with header, footer, and WhatsApp button.",
+  "frontend/src/components/SiteHeader.tsx": "Responsive navigation header with company branding, smooth scroll navigation to sections, and mobile menu using Sheet component.",
+  "frontend/src/components/SiteFooter.tsx": "Site footer with company info, navigation links, contact details (phone/email/address as clickable links), social media icons, and caffeine.ai attribution (fixed Tailwind v3 class names).",
+  "frontend/src/components/WhatsAppFloatingButton.tsx": "Fixed floating WhatsApp button that opens chat to +91 85659 64384 with pre-filled message.",
+  "frontend/src/components/ContactForm.tsx": "Contact inquiry form with validation, React Query mutation to backend submitContactForm, and success/error feedback using Alert component.",
+  "frontend/src/sections/HeroSection.tsx": "Hero section with background image, company introduction, 15 years experience badge, service summary, and primary CTAs (Get Free Consultation, View Properties, Call Now).",
+  "frontend/src/sections/AboutSection.tsx": "About section highlighting 15 years of experience, trust-building copy about Lucknow expertise, and statistics grid (experience, clients, properties, projects).",
+  "frontend/src/sections/ServicesSection.tsx": "Services section with five service cards (Buy, Sell, Resell, Property Management, Construction) and CTAs for List Your Property and Book Site Visit.",
+  "frontend/src/sections/PropertiesSection.tsx": "Properties section with tabbed interface (Buy/Sell/Rent) showing 3 property cards per category with details and contact CTA.",
+  "frontend/src/sections/ConstructionSection.tsx": "Construction services section with architectural background, five process highlights (Planning, Quality, Execution, Assurance, Delivery), and Book Site Visit CTA.",
+  "frontend/src/sections/WhyChooseUsSection.tsx": "Why Choose Us section with six value propositions including 15 years experience, local expertise, transparency, support, quality, and customer focus (fixed string quote escaping for apostrophes).",
+  "frontend/src/sections/TestimonialsSection.tsx": "Testimonials section with background pattern and three client testimonial cards with avatars and professional feedback (fixed string quote escaping for apostrophes).",
+  "frontend/src/sections/ContactSection.tsx": "Contact section displaying phone/email/address as clickable links, business hours, and integrated ContactForm component (fixed Tailwind v3 class names).",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend operations (submitContactForm mutation and getContactMessages query).",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom fonts (Inter, Playfair Display), success color tokens, and extended theme for premium blue/white design system."
+}

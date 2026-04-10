@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a modern, premium, trustworthy real estate + construction company website for Dev Properties & Construction (Lucknow, India) with a blue/white theme, modern typography, key marketing sections, contact details, WhatsApp CTA, and strong lead-generation calls-to-action.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Premium real estate hero banner with modern homes/apartments and subtle construction elements, blue/white palette (hero-real-estate-construction.dim_1600x800.png)\n- Minimal set of 5 monochrome line icons in a consistent style for: buy, sell, rent, property management, construction (services-icons-sprite.dim_800x200.png)\n- Clean abstract city/skyline or architectural pattern background, very subtle, blue/white (section-bg-architecture.dim_1600x900.png)\n- Professional testimonial section background texture/pattern, subtle, blue/white (testimonials-bg.dim_1600x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-modern-professional-marketing-website-for-dev-properties-construction-with-a-trustworthy-premium-simple-look-using-a-clean-blue-white-theme-modern-typography-and-real-estate-construction-visuals-homes-apartments-construction",
+      "title": "Create a responsive, modern, professional marketing website for “Dev Properties & Construction” with a trustworthy, premium, simple look using a clean blue/white theme, modern typography, and real-estate/construction visuals (homes, apartments, construction).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-site-navigation-that-provides-access-to-these-sections-pages-home-about-us-services-properties-buy-sell-rent-construction-why-choose-us-testimonials-contact-us",
+      "title": "Implement site navigation that provides access to these sections/pages: Home, About Us, Services, Properties (Buy/Sell/Rent), Construction, Why Choose Us, Testimonials, Contact Us.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-clear-prominent-ctas-throughout-the-site-including-buttons-labeled-exactly-get-free-consultation-list-your-property-and-book-site-visit",
+      "title": "Add clear, prominent CTAs throughout the site, including buttons labeled exactly: “Get Free Consultation”, “List Your Property”, and “Book Site Visit”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-home-section-with-a-hero-area-that-introduces-the-company-lucknow-uttar-pradesh-india-15-years-experience-services-summary-and-includes-at-least-one-primary-cta",
+      "title": "Create the Home section with a hero area that introduces the company (Lucknow, Uttar Pradesh, India; 15 years experience; services summary) and includes at least one primary CTA.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-about-us-section-describing-dev-properties-construction-emphasizing-15-years-of-experience-trust-and-local-expertise-in-lucknow",
+      "title": "Create the About Us section describing Dev Properties & Construction, emphasizing 15 years of experience, trust, and local expertise in Lucknow.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-services-section-that-clearly-lists-and-describes-buying-properties-selling-properties-reselling-properties-property-management-and-construction-services",
+      "title": "Create the Services section that clearly lists and describes: buying properties, selling properties, reselling properties, property management, and construction services.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-properties-section-with-distinct-options-for-buy-sell-and-rent-include-a-clean-ui-to-switch-between-these-categories-tabs-segmented-control-and-show-representative-property-cards-content-for-each-category-static-content-is-acceptable",
+      "title": "Create the Properties section with distinct options for Buy, Sell, and Rent; include a clean UI to switch between these categories (tabs/segmented control) and show representative property cards/content for each category (static content is acceptable).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-construction-section-describing-construction-offerings-and-process-e-g-planning-design-execution-quality-timelines-aligned-to-a-premium-trustworthy-tone",
+      "title": "Create the Construction section describing construction offerings and process (e.g., planning, design, execution, quality, timelines), aligned to a premium, trustworthy tone.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-why-choose-us-section-with-clear-value-propositions-relevant-to-the-business-e-g-15-years-experience-local-market-expertise-transparent-dealing-end-to-end-support-quality-construction",
+      "title": "Create the Why Choose Us section with clear value propositions relevant to the business (e.g., 15 years experience, local market expertise, transparent dealing, end-to-end support, quality construction).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-testimonials-section-with-a-premium-layout-and-at-least-3-testimonials-english-presented-as-example-client-feedback-clearly-not-attributed-to-real-individuals-unless-generic-names-are-used",
+      "title": "Create the Testimonials section with a premium layout and at least 3 testimonials (English) presented as example client feedback (clearly not attributed to real individuals unless generic names are used).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-contact-us-section-that-displays-the-phone-number-email-and-physical-address-exactly-as-provided-and-includes-a-contact-form-for-inquiries-name-phone-email-message",
+      "title": "Create the Contact Us section that displays the phone number, email, and physical address exactly as provided, and includes a contact form for inquiries (name, phone, email, message).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-floating-whatsapp-button-that-opens-a-whatsapp-chat-to-the-provided-phone-number-and-ensure-the-phone-number-and-email-are-clickable-tel-and-mailto-links",
+      "title": "Add a floating WhatsApp button that opens a WhatsApp chat to the provided phone number, and ensure the phone number and email are clickable (tel: and mailto: links).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-consistent-site-footer-containing-company-name-quick-links-to-the-main-sections-and-the-provided-contact-details-phone-email-address",
+      "title": "Add a consistent site footer containing company name, quick links to the main sections, and the provided contact details (phone/email/address).",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-user-facing-copy-is-in-english-and-avoids-placeholder-text-include-the-company-name-dev-properties-construction-prominently-in-the-header-branding",
+      "title": "Ensure all user-facing copy is in English and avoids placeholder text; include the company name “Dev Properties & Construction” prominently in the header/branding.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-render-generated-static-visual-assets-from-frontend-public-assets-generated-that-match-the-real-estate-construction-theme-hero-banner-and-a-small-set-of-section-visuals-icons",
+      "title": "Add and render generated static visual assets (from frontend/public/assets/generated) that match the real estate + construction theme (hero/banner and a small set of section visuals/icons).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create website structure with pages/sections: Home, About Us, Services, Properties (Buy/Sell/Rent), Construction, Why Choose Us, Testimonials, Contact Us",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add lead-generation CTAs: “Get Free Consultation”, “List Your Property”, and “Book Site Visit” across relevant sections",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add contact details and quick-contact features: WhatsApp button, phone +91 85659 64384, email devproperties44@gmail.com, address (Lucknow 226029)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Apply visual design direction: clean blue/white theme, modern fonts, premium/trustworthy styling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Use real-estate/construction visuals (homes, apartments, construction) throughout the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Backend: implement minimal persistence for contact form submissions in the single Motoko actor (store timestamped inquiries) and expose methods to create an inquiry and list inquiries (for future admin use).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Dev Properties & Construction",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

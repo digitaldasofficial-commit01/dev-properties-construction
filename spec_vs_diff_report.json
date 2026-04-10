@@ -1,0 +1,94 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T10:36:00.208Z",
+  "summary": "Most requested marketing-site sections and CTAs are implemented as in-page anchored sections with responsive header navigation, themed styling, WhatsApp floating button, contact form wired to a Motoko backend, and generated-image backgrounds referenced. However, the backend inquiry listing order does not meet the specified ordering, the requested generated service-icons sprite is not evidenced as being used, and several unrequested access-control/user-profile/admin-token features appear to be added.",
+  "missing_requirements": [
+    {
+      "id": "REQ-13",
+      "requirement": "Backend list inquiries method must return inquiries with a clear order (most recent first or otherwise explicitly ordered).",
+      "reason": "The backend appends new messages to the end of the array and returns it directly, which yields oldest-first order with no explicit sorting/reversal.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "requirement": "Use the generated 5-icon monochrome line icon sprite (buy, sell, rent, property management, construction) in the UI.",
+      "reason": "The UI uses Lucide React icons for services and other UI elements; no evidence in the diff summary that the provided sprite asset is rendered anywhere.",
+      "evidence": [
+        "frontend/src/sections/ServicesSection.tsx",
+        "frontend/src/sections/PropertiesSection.tsx"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "Footer contains quick links to the main sections (Home, About Us, Services, Properties, Construction, Why Choose Us, Testimonials, Contact Us).",
+      "reason": "The footer navSections shown include Home/About/Services/Properties and a Services group; the diff snippet does not show links for Why Choose Us, Testimonials, or Contact Us (may be absent).",
+      "evidence": [
+        "frontend/src/components/SiteFooter.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added access-control/authorization system with admin/user permissions and initialization via secret token parameter.",
+      "reason": "BuildRequest is a marketing site with no auth/admin dashboard requirement and explicitly notes Internet Identity is not required; REQ-13 only asks for minimal persistence + create/list inquiry methods.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/utils/urlParams.ts"
+      ]
+    },
+    {
+      "description": "User profile storage and profile management endpoints (get/save user profile).",
+      "reason": "No requirements mention user profiles or profile CRUD.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Admin-only restriction on listing contact messages.",
+      "reason": "REQ-13 requests a method to list inquiries for future admin use but does not require authorization gating; this is additional unrequested behavior.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Social media links/icons (Facebook/Instagram/LinkedIn) in the footer.",
+      "reason": "Footer requirements only specify company name, quick links, and provided contact details.",
+      "evidence": [
+        "frontend/src/components/SiteFooter.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/ContactForm.tsx",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/WhatsAppFloatingButton.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/sections/AboutSection.tsx",
+    "frontend/src/sections/ConstructionSection.tsx",
+    "frontend/src/sections/ContactSection.tsx",
+    "frontend/src/sections/HeroSection.tsx",
+    "frontend/src/sections/PropertiesSection.tsx",
+    "frontend/src/sections/ServicesSection.tsx",
+    "frontend/src/sections/TestimonialsSection.tsx",
+    "frontend/src/sections/WhyChooseUsSection.tsx",
+    "frontend/src/utils/urlParams.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}
